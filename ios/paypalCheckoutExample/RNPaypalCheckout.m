@@ -10,4 +10,11 @@
 
 @interface RCT_EXTERN_MODULE(RNPaypalCheckout, NSObject)
   RCT_EXTERN_METHOD(start)
+
+
+  + (BOOL)requiresMainQueueSetup
+  {
+      return NO;
+  }
+
 @end
